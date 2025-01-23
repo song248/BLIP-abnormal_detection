@@ -1,6 +1,6 @@
 # BLIP-abnormal_detection
 ## Abnormal Behavior Detection Using BLIP model  
-This repository is aimed at evaluating the performance of abnormal behavior detection using the BLIP model for CCTV
+This repository is aimed at evaluating the performance of abnormal behavior detection using the BLIP model for CCTV  
 See how VLM performs in abnormal behavior detection  
 https://huggingface.co/spaces/PIA-SPACE-LAB/PIA-SPACE_LeaderBoard
 
