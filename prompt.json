@@ -1,0 +1,88 @@
+{
+    "VIDEO_CFG": {
+        "window_size": 6,
+        "time_sampling": 15,
+        "tile_size": null
+    },
+    "MODEL_CFG": {
+        "_comment": "",
+        "_link": "",
+        "name": "assets/c7.pt",
+        "type": "clip4clip"
+    },
+    "PROMPT_CFG": [
+        {
+            "event": "falldown",
+            "top_candidates": 1,
+            "alert_threshold": 1,
+            "prompts": {
+                "normal": [
+                    {
+                        "sentence": "typical"
+                    }
+                ],
+                "abnormal": [
+                    {
+                        "sentence": "falldown"
+                    }
+                ]
+            }
+        },
+        {
+            "event": "violence",
+            "top_candidates": 1,
+            "alert_threshold": 1,
+            "prompts": {
+                "normal": [
+                    {
+                        "sentence": "normal"
+                    },
+                    {
+                        "sentence": "average"
+                    },
+                    {
+                        "sentence": "typical"
+                    }
+                ],
+                "abnormal": [
+                    {
+                        "sentence": "violence with kicking and punching"
+                    },
+                    {
+                        "sentence": "physical confrontation between people"
+                    },
+                    {
+                        "sentence": "violence"
+                    }
+                ]
+            }
+        },
+        {
+            "event": "fire",
+            "top_candidates": 1,
+            "alert_threshold": 1,
+            "prompts": {
+                "normal": [
+                    {
+                        "sentence": "tomato"
+                    }
+                ],
+                "abnormal": [
+                    {
+                        "sentence": "fire"
+                    },
+                    {
+                        "sentence": "video of be on fire with a stove"
+                    },
+                    {
+                        "sentence": "a fire is burning"
+                    },
+                    {
+                        "sentence": "embers are burning"
+                    }
+                ]
+            }
+        }
+        
+    ]
+}
